@@ -1,1 +1,22 @@
-baseurl:
+# Site settings
+title: NotAlone, U Are!
+email: zhendongguan@gmail.com
+description: "NotAlone blog, by Edward."
+baseurl: ""
+url: "http://uare.github.io"
+twitter_username: zhendongguan
+github_username: zhendongguan 
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Github defaults
+github: [metadata]
+kramdown:
+  input: GFM
+  hard_wrap: false
+gems:
+  - jekyll-coffeescript
+  - jekyll-paginate
+  - jekyll-sitemap

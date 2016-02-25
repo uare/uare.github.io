@@ -10,7 +10,9 @@ github_username: zhendongguan
 # Build settings
 markdown: kramdown
 permalink: pretty
+paginate: 10
 
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 # Github defaults
 github: [metadata]
 kramdown:

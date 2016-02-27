@@ -5,7 +5,7 @@ disqus_shortname: uare
 reading_time: true
 words_per_minute: 200
 baseurl: ""
-# url: "http://uare.github.io"
+url: "http://uare.github.io"
 
 # Owner/author information
 owner:

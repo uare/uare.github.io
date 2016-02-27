@@ -1,7 +1,7 @@
 # Site settings
 title: NotAlone, U Are!
 description: "NotAlone blog, by Edward."
-disqus_shortname: 
+disqus_shortname: uare
 reading_time: true
 words_per_minute: 200
 baseurl: ""
@@ -10,25 +10,25 @@ baseurl: ""
 # Owner/author information
 owner:
   name: Edward Green
-  avatar: avatar.jpg
-  bio: "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+  avatar: avatar.jpeg
+  bio: "自由 发现 记录</br>Freedom Discovery Notes"
+  github: zhendongguan
+  twitter: zhendongguan
+  instagram: zhendongguan
   email: zhendongguan@gmail.com
-  twitter:        
   facebook:       
-  github:         
   stackexchange:  
   linkedin:       
-  instagram:      
   flickr:         
   tumblr:         
   # google plus id, include the '+', eg +mmistakes
-  google_plus:
+  google_plus: +关振东
 
 # Background image to be tiled on all pages
 background: 
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
+# google_analytics: UA-74320749-1
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         

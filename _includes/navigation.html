@@ -43,13 +43,13 @@
 				<li><a href="{{ site.url }}/about/"><span class="btn btn-inverse">了解更多</span></a></li>
 			</ul><!-- /.dl-submenu -->
 		</li>
-		<li>
+		<!--<li>
 			<a href="#">分类</a>
 			<ul class="dl-submenu">
 				<li><a href="{{ site.url }}/posts/">所有博客</a></li>
 				<li><a href="{{ site.url }}/tags/">所有标签</a></li>
 			</ul>
-		</li>
+        </li>-->
 		{% for link in site.data.navigation %}
             {% if link.url contains 'http' %}
                 {% assign domain = '' %}

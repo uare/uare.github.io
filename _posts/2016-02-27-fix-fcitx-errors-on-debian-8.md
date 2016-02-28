@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Debian 8 修复fcitx安装错误
-description: ""
 tags: [Debian, fcitx]
 image:
   feature: abstract-3.jpg

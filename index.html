@@ -34,7 +34,12 @@ image:
     {% endif %}
   </header>
   <div class="entry-content">
-    {{ post.content }}
+    {% if post.description %}
+        {{ post.description }}
+    {% else %}
+        {{ post.content | strip_html | strip_newlines | truncate: 140 }}&hellip;
+    {% endif %}
+    <a href="{{ site.url }}{{ post.url }}">查看全文</a>
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}

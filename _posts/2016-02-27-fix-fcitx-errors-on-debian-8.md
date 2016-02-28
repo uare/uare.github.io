@@ -15,8 +15,13 @@ image:
 
 ### 过程
 
-　　不得不说Debian系的软件仓库要相对RedHat系要丰富一些，直接使用`sudo aptitude install fcitx`即可。之后重启或着重新登录看是否能够正常使用。
-　　如果还有输入框或者其它问题影响没办法正常使用的话，fcitx本身提供了一个排错的命令。
+　　不得不说Debian系的软件仓库要相对RedHat系要丰富一些，直接使用
+
+```bash
+    $ sudo aptitude install fcitx
+```
+
+　　之后重启或着重新登录看是否能够正常使用。如果还有输入框或者其它问题影响没办法正常使用的话，fcitx本身提供了一个排错的命令。
 
 ```bash
     $ fcitx-diagnose

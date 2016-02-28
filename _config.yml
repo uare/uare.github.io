@@ -5,7 +5,42 @@ disqus_shortname: uare
 reading_time: true
 words_per_minute: 200
 baseurl: ""
-url: "http://uare.github.io"
+# url: "http://uare.github.io"
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+# Amount of post to show on home page
+paginate: 5
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai
+future: true
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: ture
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: UA-74320749-1
+google_verify: googlefdf93594e52ab258.html
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
+
+# Background image to be tiled on all pages
+background: 
 
 # Owner/author information
 owner:
@@ -24,19 +59,6 @@ owner:
   # google plus id, include the '+', eg +mmistakes
   google_plus: +关振东
 
-# Background image to be tiled on all pages
-background: 
-
-# Analytics and webmaster tools stuff goes here
-google_analytics: UA-74320749-1
-google_verify: googlefdf93594e52ab258.html
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone: Asia/Shanghai
-future: true
-markdown: kramdown
 gems:
   - jekyll-sitemap
   - jekyll-paginate
@@ -44,26 +66,6 @@ gems:
 sass:
   sass_dir: _sass
   style: compressed
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
-
-# Amount of post to show on home page
-paginate: 5
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
-
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
 
 # Octopress
 # Default extensions
@@ -76,4 +78,3 @@ page_layout: page
 titlecase: true
 
 exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
-

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 关于此博客
+permalink: /about/
 image:
   feature: abstract-5.jpg
   credit: dargadgetz

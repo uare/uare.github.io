@@ -1,7 +1,6 @@
 ---
 title: 随身CentOS——我的第一个Linux （一）
 date: 2015-04-18T22:00:07+00:00
-author: zhendong
 layout: post
 guid: http://2.guandong.sinaapp.com/?p=731
 categories:

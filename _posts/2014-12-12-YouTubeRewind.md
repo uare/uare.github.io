@@ -1,7 +1,6 @@
 ---
 title: YouTube Rewind
 date: 2014-12-12T15:00:49+00:00
-author: zhendong
 layout: post
 guid: http://2.guandong.sinaapp.com/?p=622
 categories:
@@ -10,5 +9,4 @@ tags:
   - Rewind
   - YouTube
   - 热门
-  - 节奏
 ---

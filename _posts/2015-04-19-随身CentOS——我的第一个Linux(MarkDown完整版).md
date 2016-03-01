@@ -1,7 +1,6 @@
 ---
 title: 随身CentOS——我的第一个Linux (MarkDown完整版)
 date: 2015-04-19T18:12:40+00:00
-author: zhendong
 layout: post
 guid: http://2.guandong.sinaapp.com/?p=762
 categories:

@@ -4,7 +4,7 @@
     {% comment %} Link for previous page {% endcomment %}
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-        <li><a href="{{ site.url }}" class="btn">首页</a></li>
+        <li><a href="{{ site.url }}/page{{ paginator.previous_page }}/" class="btn">首页</a></li>
       {% else %}
         <li><a href="{{ site.url }}/page{{ paginator.previous_page }}/" class="btn">上一页</a></li>
       {% endif %}
@@ -14,7 +14,7 @@
     {% if paginator.page == 1 %}
       <li><strong class="current-page">1</strong></li>
     {% else %}
-      <li><a href="{{ site.url }}">1</a></li>
+      <li><a href="{{ site.url }}/page1">1</a></li>
     {% endif %}
 
     {% assign page_start = 2 %}
@@ -55,9 +55,7 @@
       <li><a href="{{ site.url }}/page{{ paginator.total_pages }}/">{{ paginator.total_pages }}</a></li>
     {% endif %}
 
-    {% comment %}
-      Link next page
-    {% endcomment %}
+    {% comment %}Link next page{% endcomment %}
     {% if paginator.next_page %}
       <li><a href="{{ site.url }}/page{{ paginator.next_page }}/" class="btn">下一页</a></li>
     {% endif %}

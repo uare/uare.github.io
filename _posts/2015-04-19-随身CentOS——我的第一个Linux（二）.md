@@ -20,51 +20,51 @@ tags:
 
 1.选择安装到自己的存储设备；
 
-![screenshot-0002](http://guandong-dong.stor.sinaapp.com/uploads/2015/04/screenshot-0002.png)
+![screenshot-0001]({{ site.image_url }}/anaconda-screenshots/screenshot-0001.png)
 
 2.选择准备安装的U盘，之后的步骤很简单，按照提示一步步就可以了；
 
-![screenshot-0002](http://guandong-dong.stor.sinaapp.com/uploads/2015/04/screenshot-0002.png)
+![screenshot-0002]({{ site.image_url }}/anaconda-screenshots/screenshot-0002.png)
 
 3.这里要注意选择自定义分区；
 
-![screenshot-0009](http://guandong-dong.stor.sinaapp.com/uploads/2015/04/screenshot-0009.png)
+![screenshot-0009]({{ site.image_url }}/anaconda-screenshots/screenshot-0009.png)
 
 4.分区的话，我们统一使用标准分区，先设置swap分区为4096Mb，然后剩下的都设为系统的跟目录分区，格式为ext4，确定之后会格式化所选分区;
 
-![screenshot-0014](http://guandong-dong.stor.sinaapp.com/uploads/2015/04/screenshot-0014.png)
+![screenshot-0014]({{ site.image_url }}/anaconda-screenshots/screenshot-0014.png)
 
 5.是否设置bootloader密码以及选择启动顺序；
 
-![screenshot-0017](http://guandong-dong.stor.sinaapp.com/uploads/2015/04/screenshot-0017.png)
+![screenshot-0017]({{ site.image_url }}/anaconda-screenshots/screenshot-0017.png)
 
-![screenshot-0018](http://guandong-dong.stor.sinaapp.com/uploads/2015/04/screenshot-0018.png)
+![screenshot-0018]({{ site.image_url }}/anaconda-screenshots/screenshot-0018.png)
 
 6.选择安装模式，简易选择Desktop，如果U盘比较小的话，可以选择Minimal最小化安装，同时也可以选择安装的软件;
 
-![screenshot-0019](http://guandong-dong.stor.sinaapp.com/uploads/2015/04/screenshot-0019.png)
+![screenshot-0019]({{ site.image_url }}/anaconda-screenshots/screenshot-0019.png)
 
 7.耐心等待安装完成，大概会持续半个多小时。
 
-![screenshot-0021](http://guandong-dong.stor.sinaapp.com/uploads/2015/04/screenshot-0021.png)
+![screenshot-0021]({{ site.image_url }}/anaconda-screenshots/screenshot-0021.png)
 
 ### 六．重启设置
 
 1.看到下面的画面就可以重启，选择U盘启动了；
 
-![screenshot-0023](http://guandong-dong.stor.sinaapp.com/uploads/2015/04/screenshot-0023.png)
+![screenshot-0023]({{ site.image_url }}/anaconda-screenshots/screenshot-0023.png)
 
 2.添加用户，设置时间（建议使用网络时间，避免以后服务器设置出问题）；
 
-![Screenshot-6](http://guandong-dong.stor.sinaapp.com/uploads/2015/04/Screenshot-6.png)
+![Screenshot-6]({{ site.image_url }}/anaconda-screenshots/Screenshot-6.png)
 
-![Screenshot-7](http://guandong-dong.stor.sinaapp.com/uploads/2015/04/Screenshot-7.png)
+![Screenshot-7]({{ site.image_url }}/anaconda-screenshots/Screenshot-7.png)
 
 3.设置Kdump大小（类似系统记录log记录），重启大功告成。
 
-![Screenshot-8](http://guandong-dong.stor.sinaapp.com/uploads/2015/04/Screenshot-8.png)
+![Screenshot-8]({{ site.image_url }}/anaconda-screenshots/Screenshot-8.png)
 
-![Screenshot](http://guandong-dong.stor.sinaapp.com/uploads/2015/04/Screenshot.png)
+![Screenshot]({{ site.image_url }}/anaconda-screenshots/Screenshot.png)
 
 # 写在最后：
 

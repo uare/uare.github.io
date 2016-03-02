@@ -2,10 +2,8 @@
 layout: post
 title: Debian 8 修复fcitx安装错误
 tags: [Debian, fcitx, 输入法]
-image:
-  feature: abstract-3.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+categories:
+  - 技术互联
 ---
 
 ### 前言

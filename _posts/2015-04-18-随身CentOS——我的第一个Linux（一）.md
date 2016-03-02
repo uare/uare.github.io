@@ -44,7 +44,7 @@ tags:
 
 　　运行DiskGenius，将U盘现在的分区进行压缩，留下空余分区，我是将U盘分区压缩到8G，剩下的留给安装CentOS 7系统了。这个分区在安装完成后是还可以留作普通U盘使用的，所以大小可以自己合理设置。
 
-![diskgenius](http://guandong-dong.stor.sinaapp.com/uploads/2015/04/diskgenius.png)
+![diskgenius]({{ site.image_url }}/anaconda-screenshots/diskgenius.png)
 
 ### 修改启动
 
@@ -52,4 +52,4 @@ tags:
 　　第一次进入后选择第一项 Install CentOS 7直接安装或者第二项 Test this media & install CentOS 7 检测硬件再安装都可以，之后等待系统启动。如果不出意外，这时系统会启动失败，现实无法找到boot文件夹。这是不要着急，先输入 cd /dev/ 查看当前所有设备。然后再输入 ls sd\* 缩小查找范围。这时一般情况下会出现 sdb sdb1 sda sda1 sda2 sda3 sda4。其中sdb1就是指我们镜像刻录的U盘分区，记住这串字符。另外sda\*的数量则取决于当前电脑硬盘的分区数目。这时我们按下 Ctrl+Alt+Delete重启电脑。
 　　同样开机时按下F12的选择U盘启动。在第一个选择界面的第一项或者第二项按下Tab键，编辑其同安装文件源，将从hed:开始到第一个空格的地方删掉改成 /dev/sdb1/ ,按下回车Enter执行安装程序。
 
-**后面的步骤请移步[第二部分](http://2.guandong.sinaapp.com/archives/741)！**
+**后面的步骤请移步第二部分**

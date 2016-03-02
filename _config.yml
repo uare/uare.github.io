@@ -7,6 +7,7 @@ words_per_minute: 500
 baseurl: ""
 # url: "http://uare.github.io"
 image_url: "/images"
+index_image: "images/feature-image-index.jpg"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/

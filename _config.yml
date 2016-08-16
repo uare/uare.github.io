@@ -3,14 +3,14 @@ title: NotAlone, U Are!
 description: "NotAlone blog, by Edward."
 disqus_shortname: uare
 reading_time: true
-words_per_minute: 500
+words_per_minute: 300
 baseurl: ""
 # url: "http://uare.github.io"
 image_url: "/images"
 index_image: "images/feature-image-index.jpg"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+permalink:   /:categories/:title.html
 
 # Amount of post to show on home page
 paginate: 5

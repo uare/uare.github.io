@@ -10,7 +10,7 @@ image_url: "/images"
 index_image: "images/feature-image-index.jpg"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title.html
+permalink:   /:year/:title
 
 # Amount of post to show on home page
 paginate: 5

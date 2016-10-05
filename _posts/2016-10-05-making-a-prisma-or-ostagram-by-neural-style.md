@@ -92,15 +92,15 @@ th neural_style.lua -style_image <image.jpg> -content_image <image.jpg>
 
 　　一下是我本机的效果图：
 
-![art out image]({{ site.image_url }}out.png)
+![art out image]({{ site.image_url }}/out.png)
 
 　　原图是：
 
-![brad pitt image]({{ site.image_url }}brad_pitt.jpg)
+![brad pitt image]({{ site.image_url }}/brad_pitt.jpg)
 
 　　模版图是：
 
-![art image]({{ site.image_url }}art.jpeg)
+![art image]({{ site.image_url }}/art.jpeg)
 
 　　更多使用方法可以参考[wiki](https://github.com/jcjohnson/neural-style/wiki)
 

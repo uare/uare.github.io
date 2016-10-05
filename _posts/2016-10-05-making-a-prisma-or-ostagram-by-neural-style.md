@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 通过Neural Style搭建本地类Prisma或者Ostagram服务
+title: 通过Neural Style搭建本地Prisma/Ostagram服务
 tags: [prisma, ostagram, neural-style]
 categories:
   - 技术互联
@@ -28,7 +28,7 @@ cd ~/torch; bash install-deps;
 ./install.sh
 ```
 
-　　其中，第二行安装 LuaJIT 和 Torch 需要的依赖项，如果 gnuplot 安装失败，则需要在 install-deps 脚本中注视掉`--with-wxmac`参数。第三行安装 LuaJIT、LuaRocks，然后使用 LuaRocks 安装 torch、nn 和 paths 等包。这里的安装过程会自动检测默认的 shell，并将 torch 添加到 PATH 中。完成后，我们在当前终端刷新环境变量：
+　　其中，第二行安装 LuaJIT 和 Torch 需要的依赖项，如果 gnuplot 安装失败，则可能需要在 install-deps 脚本中注视掉`--with-wxmac`参数。第三行安装 LuaJIT、LuaRocks，然后使用 LuaRocks 安装 torch、nn 和 paths 等包。这里的安装过程会自动检测默认的 shell，并将 torch 添加到 PATH 中。完成后，我们在当前终端刷新环境变量：
 
 ```
 # use bash
@@ -90,7 +90,7 @@ sh models/download_models.sh
 th neural_style.lua -style_image <image.jpg> -content_image <image.jpg>
 ```
 
-　　一下是我本机的效果图：
+　　以下是我本机的效果图：
 
 ![art out image]({{ site.image_url }}/neural-style/out.png)
 
@@ -113,12 +113,12 @@ th neural_style.lua -style_image <image.jpg> -content_image <image.jpg>
 　　如果论文研究可以参考以下格式进行引用：
 
 	@misc{Johnson2015,
-	  	author = {Johnson, Justin},
-  		title = {neural-style},
-	  	year = {2015},
-  		publisher = {GitHub},
-	  	journal = {GitHub repository},
-  		howpublished = {\url{https://github.com/jcjohnson/neural-style}},
+        author = {Johnson, Justin},
+        title = {neural-style},
+        year = {2015},
+        publisher = {GitHub},
+        journal = {GitHub repository},
+        howpublished = {\url{https://github.com/jcjohnson/neural-style}},
 	}
 
 

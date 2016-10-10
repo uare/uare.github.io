@@ -23,7 +23,7 @@ sudo airport -s
 　　命令结果显示出附近可用的Wi-Fi信息，如下所示：
 
 ```
-	SSID BSSID             RSSI CHANNEL HT CC SECURITY (auth/unicast/group)
+    SSID BSSID             RSSI CHANNEL HT CC SECURITY (auth/unicast/group)
  ******* **:**:**:**:**:** -50  153     Y  CN -- WPA2(PSK/AES/AES)
 ChinaNet **:**:**:**:**:** -46  11      N  CN NONE
 ...
@@ -66,18 +66,18 @@ aircrack-ng -w dic.txt -M 100 -f 80 -1 -a 2 -b **:**:**:**:**:** /tmp/airportSni
 
 　　参数说明：
 
-    - \-w 指定字典文件
-    - \-M 指定最大IVs，根据提示可以适当调大次参数
-    - \-f 暴力破解因子，默认2，也可适当调大
-    - \-a 加密类型，1:WEP, 2:WPA-PSK
-    - \-b BSSID，刚刚纪录目标Wi-Fi的Mac地址
-    
-    更多参数说明可以通过`aircrack-ng --help`查看。
-    后面紧跟之前纪录的捕获数据的存储地址即可。如果在字典里面找到的话，可以看到如下画面：
+　　- \-w 指定字典文件
+　　- \-M 指定最大IVs，根据提示可以适当调大次参数
+　　- \-f 暴力破解因子，默认2，也可适当调大
+　　- \-a 加密类型，1:WEP, 2:WPA-PSK
+　　- \-b BSSID，刚刚纪录目标Wi-Fi的Mac地址
+　　
+　　更多参数说明可以通过`aircrack-ng --help`查看。
+　　后面紧跟之前纪录的捕获数据的存储地址即可。如果在字典里面找到的话，可以看到如下画面：
 
 ![Crack SuccessFully Image]({{ site.image_url }}/aircrack-ng/success.png)
 
-    注：因为 aircrack-ng 是破解捕获数据的，所以所破解的Wi-Fi必须要有设备连接，并且有网络通信，否则无法破解。
+　　注：因为 aircrack-ng 是破解捕获数据的，所以所破解的Wi-Fi必须要有设备连接，并且有网络通信，否则无法破解。
 
 ## 参考目录
 

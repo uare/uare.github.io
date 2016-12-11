@@ -14,7 +14,7 @@ categories:
 
 ### 安装 torch7　
 
-　　如果 MacOS 系统已经升级为 Sierra，我们需要手动安装 qt，否则会安装失败。参考 [qt: fix building on Sierra and Xcode 8 by disabling phonon #5216](https://github.com/Homebrew/homebrew-core/pull/5216) ，我们手动编辑`qt.rb`，键入`brew edit qt`，编辑参数增加`-no-phonon`项：
+　　如果 MacOS 系统已经升级为 Sierra，我们需要手动安装 qt，否则会安装失败。参考 [qt: fix building on Sierra and Xcode 8 by disabling phonon #5216](https://github.com/Homebrew/homebrew-core/pull/5216) ，我们手动编辑'qt.rb'，键入'brew edit qt'，编辑参数增加'-no-phonon'项：
 
 ```
 args << "-no-phonon" if MacOS.version >= :sierra
@@ -28,7 +28,7 @@ cd ~/torch; bash install-deps;
 ./install.sh
 ```
 
-　　其中，第二行安装 LuaJIT 和 Torch 需要的依赖项，如果 gnuplot 安装失败，则可能需要在 install-deps 脚本中注视掉`--with-wxmac`参数。第三行安装 LuaJIT、LuaRocks，然后使用 LuaRocks 安装 torch、nn 和 paths 等包。这里的安装过程会自动检测默认的 shell，并将 torch 添加到 PATH 中。完成后，我们在当前终端刷新环境变量：
+　　其中，第二行安装 LuaJIT 和 Torch 需要的依赖项，如果 gnuplot 安装失败，则可能需要在 install-deps 脚本中注视掉'--with-wxmac'参数。第三行安装 LuaJIT、LuaRocks，然后使用 LuaRocks 安装 torch、nn 和 paths 等包。这里的安装过程会自动检测默认的 shell，并将 torch 添加到 PATH 中。完成后，我们在当前终端刷新环境变量：
 
 ```
 # use bash
@@ -37,7 +37,7 @@ source ~/.bashrc
 source ~/.zshrc
 ```
 
-　　最后在当前终端键入 `th` 检测 torch 是否安装成功：
+　　最后在当前终端键入 'th' 检测 torch 是否安装成功：
 
 ```
   ______             __   |  Torch7
@@ -49,7 +49,7 @@ source ~/.zshrc
 th>
 ```
 
-　　显示以上信息后，就说明 torch 安装成果，然后键入 `exit` 退出。
+　　显示以上信息后，就说明 torch 安装成果，然后键入 'exit' 退出。
 
 ### 安装 loadcaffe
 
@@ -62,7 +62,7 @@ brew install protobuf
 sudo apt-get install libprotobuf-dev protobuf-compiler
 ```
 
-　　然后键入`luarocks install loadcaffe`即可。
+　　然后键入'luarocks install loadcaffe'即可。
 
 ### 安装 neural-style
 
@@ -80,7 +80,7 @@ cd neural-style
 sh models/download_models.sh
 ```
 
-　　其中`vgg_normalised.caffemodel`和`VGG_ILSVRC_19_layers.caffemodel`比较大，需要网络较好的条件下，否则下载速度非常慢。
+　　其中'vgg_normalised.caffemodel'和'VGG_ILSVRC_19_layers.caffemodel'比较大，需要网络较好的条件下，否则下载速度非常慢。
 
 ### 使用效果
 

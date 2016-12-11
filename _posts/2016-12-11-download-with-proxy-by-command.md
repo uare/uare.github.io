@@ -57,8 +57,6 @@ wget -e http_proxy=http://127.0.0.1:8123 $url
 
 　　如果下载的链接为 https，则需要改为设置 `https_proxy` 。
 
-```
-
 ### aria2c
 
 ```

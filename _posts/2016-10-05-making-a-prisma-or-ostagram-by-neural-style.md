@@ -14,7 +14,7 @@ categories:
 
 ### 安装 torch7　
 
-　　如果 MacOS 系统已经升级为 Sierra，我们需要手动安装 qt，否则会安装失败。参考 [qt: fix building on Sierra and Xcode 8 by disabling phonon #5216](https://github.com/Homebrew/homebrew-core/pull/5216) ，我们手动编辑 `qt.rb`，键入 `brew edit qt`，编辑参数增加 `-no-phonon`项：
+　　如果 MacOS 系统已经升级为 Sierra，我们需要手动安装 qt，否则会安装失败。参考 [qt: fix building on Sierra and Xcode 8 by disabling phonon #5216](https://github.com/Homebrew/homebrew-core/pull/5216) ，我们手动编辑`qt.rb`，键入`brew edit qt`，编辑参数增加`-no-phonon`项：
 
 ```
 args << "-no-phonon" if MacOS.version >= :sierra

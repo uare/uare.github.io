@@ -36,7 +36,7 @@ categories:
 
 　　Google Apps Script 提供了很多的操作方法，可以在线编辑，在线运行。而我只是想要将多个文件合并起来，在经过一番搜索实践后，整理了一个脚本如下所示。
 
-```
+```javascript
 function mergeSheets() {
 
   var SOURCE = "chinese-IFTTT-weibo-posts";
@@ -95,6 +95,7 @@ function mergeSheets() {
 　　其实就是使用 JavaScript 语言授权后调用接口实现的。不过提供的方法很多，对于需要自动化或者批量处理的情景下，可以提供很大的便利。
 
 ## 参考目录
+
 - [1] [Merge Multiple Google Spreadsheets into One](https://ctrlq.org/code/19980-merge-google-spreadsheets)
-- [2] [Drive Service | Apps Script | Google Developers](https://developers.google.com/apps-script/reference/drive/)
-- [3] [Spreadsheet Service | Apps Script | Google Developers](https://developers.google.com/apps-script/reference/spreadsheet/)
+- [2] [Drive Service \| Apps Script \| Google Developers](https://developers.google.com/apps-script/reference/drive/)
+- [3] [Spreadsheet Service \| Apps Script \| Google Developers](https://developers.google.com/apps-script/reference/spreadsheet/)

@@ -53,7 +53,7 @@ brew install crunch # optional
 　　crunch 是一个自定义字典生成器，如果有现成的字典则不需要。crunch 生成长度为8的纯数字字典并存入 dic.txt 示例如下：
 
 ```
-crunch 8 8 012345678 -o dic.txt
+crunch 8 8 0123456789 -o dic.txt
 ```
 
 ## 开始破解

@@ -40,17 +40,17 @@ owner:
   name: Edward Green
   avatar: avatar.jpeg
   bio: "自由 发现 记录</br>Freedom Discovery Notes"
-  github: zhendongguan
+  github: nooop3
   twitter: ludewan
   instagram: ludewan
-  email: zhendongguan@gmail.com
+  email: zhendongguan@outlook.com
   facebook:       
   stackexchange:  
   linkedin:       
   flickr:         
   tumblr:         
   # google plus id, include the '+', eg +mmistakes
-  google_plus: +关振东
+  google_plus:
 
 gems:
   - jekyll-sitemap

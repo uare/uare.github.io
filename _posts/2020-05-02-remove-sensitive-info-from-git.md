@@ -37,8 +37,7 @@ echo "need_ignore_local_only.txt" >> .git/exclude
 
 - 批量更新历史记录的作者信息
 
-　　当处理多个 Repo ，需要区别 Git 作者信息，但有时候不小心可能就会使用错误的作者信息提交了 commit
-。这个时候也是需要重新 commit ，首先我们先列一下但前仓库的作者信息：
+　　当处理多个 Repo ，需要区别 Git 作者信息，但有时候不小心可能就会使用错误的作者信息提交了 commit 。这个时候也是需要重新 commit ，首先我们先列一下但前仓库的作者信息：
 
 ```bash
 # list all commits
@@ -60,8 +59,7 @@ git change-commits GIT_AUTHOR_NAME "old name" "new name"
 git change-commits GIT_AUTHOR_EMAIL "old@email.com" "new@email.com"
 ```
 
-　　需要注意的是如果之前做过一次，那么已经存在一份 backup
-，需要手动删除，或者使用强制更新:
+　　需要注意的是如果之前做过一次，那么已经存在一份 backup ，需要手动删除，或者使用强制更新:
 
 ```bash
 git update-ref -d refs/original/refs/heads/master
@@ -69,15 +67,11 @@ git update-ref -d refs/original/refs/heads/master
 git change-commits GIT_AUTHOR_EMAIL "old@email.com" "new@email.com" --force
 ```
 
-　　如果项目比较大，或者需要更新的比较多，也可以直接参考 [GitHub 的官方文档](https://help.github.com/en/github/using-git/changing-author-info)
-更新作者信息。
+　　如果项目比较大，或者需要更新的比较多，也可以直接参考 [GitHub 的官方文档](https://help.github.com/en/github/using-git/changing-author-info) 更新作者信息。
 
 - 彻底移除代码仓库的敏感信息
 
-　　如果仓库里面包含敏感信息的话，用 `git filter-branch`
-也可以做但是比较麻烦，推荐参考 [GitHub
-官方文档](https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository)，使用
-[BFG Reo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/) 来清理敏感数据：
+　　如果仓库里面包含敏感信息的话，用 `git filter-branch` 也可以做但是比较麻烦，推荐参考 [GitHub 官方文档](https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository)，使用 [BFG Reo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/) 来清理敏感数据：
 
 ```bash
 bfg --delete-files SENSITIVE_FILE.txt repo.git

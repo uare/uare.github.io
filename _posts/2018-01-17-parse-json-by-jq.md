@@ -3,7 +3,7 @@ layout: post
 title: 命令行解析 json 数据
 tags: [jq, json]
 categories:
-  - 简明手册
+    - manual
 ---
 
 ### jq 简介

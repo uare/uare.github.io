@@ -1,4 +1,7 @@
 # Menu navigation links
 
+- title: Feed
+  url: /feed.xml
+
 - title: Have a fun
   url: https://www.youtube.com/watch?v=dQw4w9WgXcQ

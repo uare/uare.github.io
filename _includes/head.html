@@ -30,7 +30,8 @@
 
 {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
 <link rel="canonical" href="{{ canonical }}">
-<link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+{% feed_meta %}
+{% seo %}
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -41,7 +42,7 @@
 <meta name="theme-color" content="#09eac1">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css"> <!-- Webfonts --> <link rel="stylesheet" href="{{ site.url }}/assets/css/webfonts.css" type="text/css"> <meta http-equiv="cleartype" content="on"> 
+<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css"> <!-- Webfonts --> <link rel="stylesheet" href="{{ site.url }}/assets/css/webfonts.css" type="text/css"> <meta http-equiv="cleartype" content="on">
 <!-- Load Modernizr -->
 <script src="{{ site.url }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 

@@ -19,7 +19,7 @@ paginate: 5
 google_analytics: UA-74320749-1
 google_verify: googlefdf93594e52ab258.html
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
+bing_verify: 0A9D205EBE862882573E09E232A3135E
 
 # Background image to be tiled on all pages
 background:

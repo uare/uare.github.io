@@ -15,17 +15,6 @@ permalink: /:year/:title
 # Amount of post to show on home page
 paginate: 5
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone: Asia/Shanghai
-future: true
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: true
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    default_lang: shell
-
 # Analytics and webmaster tools stuff goes here
 google_analytics: UA-74320749-1
 google_verify: googlefdf93594e52ab258.html
@@ -37,9 +26,10 @@ background:
 
 # Owner/author information
 owner:
-  name: Edward Green
+  name: Edward Guan
   avatar: avatar.jpeg
-  bio: "自由 发现 记录</br>Freedom Discovery Notes"
+  # bio: 自由 发现 记录
+  bio: Freedom Discovery Notes
   github: nooop3
   twitter: ludewan
   instagram: ludewan
@@ -49,13 +39,28 @@ owner:
   linkedin:
   flickr:
   tumblr:
-  # google plus id, include the '+', eg +mmistakes
-  google_plus:
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai
+future: true
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+  hard_wrap: true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: shell
 
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-feed
 sass:
   sass_dir: _sass
   style: compressed
@@ -70,4 +75,28 @@ page_layout: page
 # Format titles with titlecase?
 titlecase: true
 
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+include:
+  - .htaccess
+exclude:
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp

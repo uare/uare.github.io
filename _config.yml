@@ -10,7 +10,7 @@ image_url: "/images"
 index_image: "images/feature-image-index.jpg"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:year/:title
+permalink: /:year/:title
 
 # Amount of post to show on home page
 paginate: 5
@@ -30,10 +30,10 @@ kramdown:
 google_analytics: UA-74320749-1
 google_verify: googlefdf93594e52ab258.html
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # Background image to be tiled on all pages
-background: 
+background:
 
 # Owner/author information
 owner:
@@ -44,11 +44,11 @@ owner:
   twitter: ludewan
   instagram: ludewan
   email: zhendongguan@outlook.com
-  facebook:       
-  stackexchange:  
-  linkedin:       
-  flickr:         
-  tumblr:         
+  facebook:
+  stackexchange:
+  linkedin:
+  flickr:
+  tumblr:
   # google plus id, include the '+', eg +mmistakes
   google_plus:
 

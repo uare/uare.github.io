@@ -1,12 +1,13 @@
 ---
 layout: page
-title: 关于此博客
+title: About This Site
 permalink: /about/
 image:
-  feature: abstract-5.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  feature: feature-image-index.jpg
+  credit: Edward
+  creditlink: https://goo.gl/photos/hZnGpd79QhvYUm3d7
 comments: false
+modified: 2023-07-16
 ---
 
 ## 由来

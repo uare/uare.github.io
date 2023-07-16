@@ -52,7 +52,7 @@ owner:
   # google plus id, include the '+', eg +mmistakes
   google_plus:
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-gist

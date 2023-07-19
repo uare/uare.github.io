@@ -1,9 +1,62 @@
 const styles = `
+html {
+  --blue-brighter: #e3f0f8;
+  --blue-bright: #4ab9f8;
+  --blue: #1c7cbb;
+  --blue-dark: #1d5a88;
+  --blue-darker: #0a1922;
+  --green-bright: #39b97c;
+  --green: #10967a;
+  --green-dark: #09795c;
+  --red-bright: #ff7d72;
+  --red: #d73f34;
+  --red-dark: #c52d22;
+  --red-darker: #a50d02;
+  --white: #fff;
+  --grey-brighter: #f5fbff;
+  --grey-bright: #e1e1e1;
+  --grey: #767676;
+  --grey-dark: #5a5a5a;
+  --grey-darker: #394d5c;
+  --grey-very-dark: #343434;
+  --c-text: var(--grey-darker);
+  --c-text-catchy: var(--blue-darker);
+  --c-highlight: var(--blue-dark);
+  --c-bg: var(--white);
+  --soft-shadow-dark: 0px 0.5px 1.4px #0000001a,
+    0px 1.3px 3.8px rgba(0, 0, 0, 0.125), 0px 3px 9px rgba(0, 0, 0, 0.135),
+    0px 10px 30px rgba(0, 0, 0, 0.145);
+  --soft-shadow-small: 0px 0.5px 1.4px rgba(0, 0, 0, 0.015),
+    0px 1.3px 3.8px #00000005, 0px 3px 9px rgba(0, 0, 0, 0.025),
+    0px 10px 30px rgba(0, 0, 0, 0.035);
+  --soft-shadow-large: 0px 1.3px 1px -10px rgba(0, 0, 0, 0.031),
+    0px 3.2px 2.5px -10px rgba(0, 0, 0, 0.044),
+    0px 6px 4.6px -10px rgba(0, 0, 0, 0.055),
+    0px 10.7px 8.3px -10px rgba(0, 0, 0, 0.066),
+    0px 20.1px 15.5px -10px rgba(0, 0, 0, 0.079), 0px 48px 37px -10px #0000001c;
+  --grid-outer-padding: 1rem;
+  --gradient-blue: linear-gradient(220.55deg, #1d5a88, #1c7cbb);
+  --grid-gap: 2.5em;
+  --coding-font: consolas, monaco, "andale mono", "ubuntu mono", monospace;
+  --scrollbar-bg: var(--c-bg);
+  --scrollbar-thumb: var(--blue);
+  accent-color: var(--blue);
+  color: var(--c-text);
+  font-family: -apple-system, blinkmacsystemfont, segoe ui, roboto, helvetica,
+    arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+  font-size: 120%;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-y: scroll;
+}
+
+
 mini-map {
   display: block;
-  position: absolute;
+  // position: absolute;
+  position: fixed;
   top: 5em;
-  right: 1em;
+  right: 10em;
   height: calc(100% - 7em);
   padding: 4em 1em 1em;
 }
@@ -12,7 +65,7 @@ mini-map .screen-image {
   border-radius: 0.5em;
   box-shadow: var(--soft-shadow-small);
   position: sticky;
-  padding: 16px;
+  padding: 6px;
   top: 1em;
   bottom: 1em;
 }
@@ -40,7 +93,7 @@ mini-map .pointer svg {
 }
 
 mini-map .screen-image .canvas {
-  background: white -moz-element(#main) no-repeat scroll center center / contain;
+  background: white -moz-element(#map) no-repeat scroll center center / contain;
 }
 
 mini-map .screen-image svg {
@@ -68,7 +121,7 @@ class MiniMap extends HTMLElement {
 
     this.elementCssIsSupported = CSS.supports(
       'background',
-      'white -moz-element(#main)'
+      'white -moz-element(#map)'
     );
 
     if (this.elementCssIsSupported) {
@@ -85,8 +138,7 @@ class MiniMap extends HTMLElement {
   connectedCallback() {
     if (!this.elementCssIsSupported) return this.removeMap();
 
-    // const mapContainer = document.getElementById('map');
-    const mapContainer = document.body;
+    const mapContainer = document.getElementById('map');
     const {
       width: containerWidth,
       height: containerHeight,
@@ -102,7 +154,7 @@ class MiniMap extends HTMLElement {
         <svg aria-hidden="true">
             <use xlink:href="/assets/images/sprite.svg#icon-arrow-right-top"/>
         </svg>
-        <a class="hand-written hint" href="/a-firefox-only-minimap/">Woah! What's this?</a>
+        <a class="hand-written hint" href="https://www.stefanjudis.com/a-firefox-only-minimap/">Woah! What's this?</a>
       </div>
       `;
 

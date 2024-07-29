@@ -13,6 +13,8 @@ image:
 {% for post in paginator.posts %}
 <article class="hentry">
   <header>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense_client }}"
+     crossorigin="anonymous"></script>
     {% if post.image.feature %}
       <div class="entry-image-index">
         <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}"></a>

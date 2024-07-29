@@ -20,6 +20,7 @@ google_analytics: G-E4YDY1BPMJ
 google_verify: googlefdf93594e52ab258.html
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify: 0A9D205EBE862882573E09E232A3135E
+adsense_client: ca-pub-4530321911465049
 
 # Background image to be tiled on all pages
 background:
